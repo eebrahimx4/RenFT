@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body>
+    
+    <div class="contener">
+        <!-- Header -->
+        <header>
+            <div class="support"> 
+                <a href=""><i class='bx bxl-graphql'>V9.5</i></a>
+                <div class="supp">
+                <a href=""><i class='bx bx-support'></i></a>
+                <a href=""><i class='bx bxl-snapchat'></i></a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <div class="content">
+            <div class="image">
+                <img id="slideshow" src="/image/cover.jpg" alt="Logo" class="logo">
+          </div>
+        <!-- TexrBar -->
+            <div class="textbar">
+                <div class="marquee">
+                    <p>نحن دائما معك لكسب المال بطريقة آمنة ومستقرة
+                        - شكرا لتعاونك معنا
+                    </p>
+            </div>
+            </div>
+
+            <!-- walet -->
+             <div class="walet">
+                <i class='bx bx-wallet-alt'></i>
+                <p>رصيد الحساب : 1000.00</p>
+                <a href="/html/index.html"><i class="fas fa-sync-alt icon"></i> </a>
+             </div>
+            
+            <!-- Boxes -->
+             <div class="boxes">
+                <div class="box">
+                    <a href="#"><i class='bx bxs-gift'></i></a>
+                    <a href="#"><p> هدية</p></a>
+                </div>
+                <div class="box">
+                    <a href="#"><i class='bx bxs-wallet'></i></a>
+                    <a href="#"><p> شحن</p></a>
+                </div>
+                <div class="box">
+                    <a href="#"><i class='bx bxs-cart-alt'></i></i></a>
+                    <a href="#"><p> سحب</p></a>
+                </div>
+                <div class="box">
+                    <a href="#"><i class='bx bxs-phone-call'></i></i></a>
+                    <a href="#"><p> الدعم</p></a>
+                </div>
+
+                
+                <!-- Foter -->
+
+                <div class="Foter">
+               
+                    <div class="box">
+                        <a href="/html/index.html"><i class='bx bxs-home' ></i></a>
+                        <a href="/html/index.html"><p> الرئيسيه</p></a>
+                    </div>
+                    <div class="box">
+                        <a href="/html/tasks.html"><i class='bx bx-task' ></i></a>
+                        <a href="/html/tasks.html"><p> المهام</p></a>
+                    </div>
+                    <div class="box">
+                        <a href="/html/friends.html"><i class='bx bxs-group'></i></a>
+                        <a href="/html/friends.html"><p> الاصدقاء</p></a>
+                    </div>
+                    <div class="box">
+                        <a href="/html/profile.html"><i class='bx bxs-user-circle' ></i></a>
+                        <a href="/html/profile.html"><p> انا</p></a>
+                    </div>
+                </div>
+    </div>
+
+
+
+
+
+       <!-- Content Body -->
+    <div class="newText">
+        <p>الاحداث اليوميه </p>
+        <i class='bx bx-notepad'></i>
+    </div>
+
+
+
+
+
+    <!-- Boxis For All Data -->
+     <div class="newes">
+      <div class="newbox">
+        <div class="newbox1">
+            <a href="#"><i class='bx bxs-user-plus'></i></a>
+            <a href="#"><p> مكافأة الوكيل </p></a>
+        </div>
+        <div class="newbox3">
+            <a href="#"><i class='bx bxs-building-house' ></i></a>
+            <a href="#"><p> معلومات الشركة </p></a>
+        </div>
+      </div>
+     </div>
+        
+   
+
+
+  <!-- عرض السحوبات -->
+  <div class="withdrawal-requests">
+    <h3><i class='bx bx-transfer-alt'></i> آخر طلبات الأيداع و السحب</h3>
+    <div class="users-container" id="usersContainer"></div>
+  </div>
+
+
+
+
+
+    <!-- عشان نفتح الخطه ويظهرلك المحفظه -->
+    <div class="modal-overlay" id="walletModal">
+        <div class="modal-content">
+          <span class="close-modal" onclick="closeModal()">×</span>
+      
+          <div class="wallet-box">
+            <h2>رصيد الحساب</h2>
+            <div class="balance">0.00</div>
+      
+            <div class="transaction-row">
+              <div class="box">
+                <label>الربح المقدر</label>
+                <div>0.00</div>
+              </div>
+              <div class="box">
+                <label>مبلغ المعاملة</label>
+                <div>0.00</div>
+              </div>
+            </div>
+      
+            <div class="row-info">
+              <p>رسوم المعالجة: 0%</p>
+              <p>معدل الدفع: 3.00%</p>
+              <p>VIP أرباح: 0%</p>
+            </div>
+      
+            <div class="allocate-row">
+              <button>تخصيص</button>
+              <button>الكل</button>
+              <input type="number" value="0.00">
+            </div>
+      
+            <button class="charge-btn">إعادة الشحن</button>
+      
+            <div class="action-buttons">
+              <button class="cancel-btn" onclick="closeModal()">إلغاء</button>
+              <button class="confirm-btn">تأكيد</button>
+            </div>
+          </div>
+      
+        </div>
+      </div>
+  
+
+
+      <!-- div جديد -->
+      
+        
+
+
+
+
+
+
+
+    <script src="/js/index.js"></script>
+</body>
+
+</html>

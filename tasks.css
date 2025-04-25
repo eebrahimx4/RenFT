@@ -1,0 +1,413 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+  background-color: #150e2b;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.contener{
+  background-color: #10223d;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+}
+.support{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 5px 0px;
+}
+.logo img{
+  width: 100%;
+  height: auto;
+  object-position: top;
+}
+
+
+
+.textbar{
+  position: relative;
+  background-color: #2c49636b;
+  width: 100%;
+  height: 35px;
+  overflow: hidden;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+
+.marquee {
+  color: yellow;
+  position: absolute;
+  white-space: nowrap; 
+  animation: scrollText 6s linear infinite;
+  padding-top: 7px;
+}
+
+@keyframes scrollText {
+  from {
+  transform: translateX(-100%);
+  }
+  to {
+  transform: translateX(100%);
+  }
+}
+
+.walet{
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 15px;
+  gap: 10px;
+  font-size: 20px;
+}
+.support i{
+  color: white;
+  font-size: 17px;
+}
+.supp i{
+  gap: 10px;
+  font-size: 20px;
+  width: 30px;
+}
+
+.boxes{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 10px;
+  color: white;
+}
+.boxes .box{
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  gap: 5px;
+}
+.boxes .box i {
+  color: yellow;
+  gap: 10px;
+}
+
+
+.Foter {
+  width: 100%;
+  height: 60px; /* خلي الارتفاع ثابت */
+  display: flex;
+  justify-content: space-around; /* لو عايزهم يتوزعوا بشكل مناسب */
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #10223d;
+  color: white;
+  font-size: 20px;
+  gap: 15px;
+  z-index: 999;
+}
+
+.Foter .box{
+  width: 24%;
+}
+.Foter .box:hover{
+  letter-spacing: 1px;
+}
+
+.Foter .box i,a{
+  color: #a9bed1;
+  font-size: 20px;
+}
+.newText{
+  background-color: #a9bed1;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0px 10px;
+  border-radius: 10px;
+  margin: 0px 10px;
+}
+
+
+
+
+
+
+.match-card {
+  width: 100%;
+  margin: 5px 0px;
+  background-color: #0c1d38;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.player-section {
+  position: relative;
+  height: 70px;
+}
+
+.player-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding: 10px;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+}
+
+.top-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.player-info {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.player-info h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.player-info p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.league-title {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 0;
+  background-color: #122540;
+}
+
+.match-teams {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+.team {
+  text-align: center;
+}
+
+.team img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.vs {
+  font-weight: bold;
+  font-size: 18px;
+  color: orange;
+}
+
+
+
+
+/* open the cart */
+.open-modal {
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; right: 0; left: 0; bottom: 0;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modal-content {
+    background: #0d1b2a;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    color: #fff;
+    position: relative;
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 10px; right: 15px;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .wallet-box .balance {
+    font-size: 32px;
+    color: #4fa3f7;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .transaction-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .transaction-row .box {
+    flex: 1;
+    background: #1b263b;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+  }
+  
+  .row-info p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .allocate-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+  }
+  
+  .allocate-row input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+  }
+  
+  .charge-btn {
+    background: #4fa3f7;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .cancel-btn, .confirm-btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+  }
+  
+  .cancel-btn {
+    background: #333;
+    color: #fff;
+  }
+  
+  .confirm-btn {
+    background: #4fa3f7;
+    color: white;
+  }
+  
+
+.newSearch{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search_input{
+    width: 95%;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+.search_input:focus{
+    box-shadow: 0 0 10px #acff2fc5;
+    transition: all 0.2s ease-in-out;
+    background-color: #123;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+#matchesContainer{
+  margin-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

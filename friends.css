@@ -1,0 +1,277 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+  background-color: #150e2b;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.contener{
+  background-color: #10223d;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+}
+.support{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo{
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 5px 0px;
+}
+.logo img{
+  width: 100%;
+  height: auto;
+  object-position: top;
+}
+
+
+
+.textbar{
+  position: relative;
+  background-color: #2c49636b;
+  width: 100%;
+  height: 35px;
+  overflow: hidden;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+
+.marquee {
+  color: yellow;
+  position: absolute;
+  white-space: nowrap; 
+  animation: scrollText 6s linear infinite;
+  padding-top: 7px;
+}
+
+@keyframes scrollText {
+  from {
+  transform: translateX(-100%);
+  }
+  to {
+  transform: translateX(100%);
+  }
+}
+
+.walet{
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 15px;
+  gap: 10px;
+  font-size: 20px;
+}
+.support i{
+  color: white;
+  font-size: 17px;
+}
+.supp i{
+  gap: 10px;
+  font-size: 20px;
+  width: 30px;
+}
+
+.boxes{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 10px;
+  color: white;
+}
+.boxes .box{
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  gap: 5px;
+}
+.boxes .box i {
+  color: yellow;
+  gap: 10px;
+}
+
+
+.Foter {
+  width: 100%;
+  height: 60px; /* خلي الارتفاع ثابت */
+  display: flex;
+  justify-content: space-around; /* لو عايزهم يتوزعوا بشكل مناسب */
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #10223d;
+  color: white;
+  font-size: 20px;
+  gap: 15px;
+  z-index: 999;
+}
+
+.Foter .box{
+  width: 24%;
+}
+.Foter .box:hover{
+  letter-spacing: 1px;
+}
+
+.Foter .box i,a{
+  color: #a9bed1;
+  font-size: 20px;
+}
+.newText{
+  background-color: #a9bed1;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0px 10px;
+  border-radius: 10px;
+  margin: 0px 10px;
+}
+
+
+/* My Friends Style */
+
+.invite-container {
+  display: inline-block;
+  background-color: #122540;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  width: 100%;
+  margin: 5px;
+}
+
+.invite-container h2 {
+  margin-bottom: 15px;
+  color: #f1c40f;
+}
+
+.referral-link {
+  background-color: #1c2e4a;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  word-break: break-word;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  background-color: #4fa3f7;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #368dd9;
+}
+
+.success-msg {
+  color: #00ff91;
+  margin-top: 10px;
+  display: none;
+  font-size: 14px;
+}
+/* My Friends Style 2 */
+.container {
+  max-width: 500px;
+  margin: auto;
+  background-color: #182840;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.levels {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.level {
+  background-color: #22354f;
+  padding: 15px;
+  border-radius: 15px;
+  border-right: 6px solid transparent;
+}
+
+.level1 { border-color: #8fff8f; }
+.level2 { border-color: #ffeb66; }
+.level3 { border-color: #ff6b6b; }
+
+.level h3 {
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.level p {
+  font-size: 16px;
+  color: #bdeaff;
+}
+
+.bouns{
+  background-color: #101f63;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.imageFriends img{
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  margin: 5px 0px;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

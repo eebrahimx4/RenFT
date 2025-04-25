@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks Page</title>
+    <link rel="stylesheet" href="/css/tasks.css">
+</head>
+
+<body>
+    
+    <div class="contener">
+        <!-- Header -->
+        <header>
+            <div class="support"> 
+                <a href=""><i class='bx bxl-graphql'>V9.5</i></a>
+                <div class="supp">
+                <a href=""><i class='bx bx-support'></i></a>
+                <a href=""><i class='bx bxl-snapchat'></i></a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content For all Page -->
+        <div class="content">
+
+       <!-- Search Products -->
+    <div class="newSearch">
+        <input type="search" placeholder="ابحث عن التاجر" class="search_input" id="searchInput">
+    </div>
+
+           <!-- open the Cart in Matches -->
+    <div class="open-modal">
+        
+ 
+      <!-- data in for loop js -->
+      <div id="matchesContainer"></div>
+      
+    </div>
+
+
+    <!-- عشان نفتح الخطه ويظهرلك المحفظه -->
+    <div class="modal-overlay" id="walletModal">
+      <div class="modal-content">
+        <span class="close-modal" onclick="closeModal()">×</span>
+    
+        <div class="wallet-box">
+          <h2>رصيد الحساب</h2>
+          <div class="balance">0.00</div>
+    
+          <div class="transaction-row">
+            <div class="box">
+              <label>الربح المقدر</label>
+              <div>0.00</div>
+            </div>
+            <div class="box">
+              <label>مبلغ المعاملة</label>
+              <div>0.00</div>
+            </div>
+          </div>
+    
+          <div class="row-info">
+            <p>رسوم المعالجة: 0%</p>
+            <p>معدل الدفع: 3.00%</p>
+            <p>VIP أرباح: 0%</p>
+          </div>
+    
+          <div class="allocate-row">
+            <button>تخصيص</button>
+            <button>الكل</button>
+            <input type="number" value="0.00">
+          </div>
+    
+          <button class="charge-btn">إعادة الشحن</button>
+    
+          <div class="action-buttons">
+            <button class="cancel-btn" onclick="closeModal()">إلغاء</button>
+            <button class="confirm-btn">تأكيد</button>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+
+
+
+    <!-- Boxis For All Data -->
+   
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+            
+                <!-- Foter -->
+                <div class="boxes">
+                    <div class="Foter">
+                   
+                        <div class="box">
+                            <a href="/html/index.html"><i class='bx bxs-home' ></i></a>
+                            <a href="/html/index.html"><p> الرئيسيه</p></a>
+                        </div>
+                        <div class="box">
+                            <a href="/html/tasks.html"><i class='bx bx-task' ></i></a>
+                            <a href="/html/tasks.html"><p> المهام</p></a>
+                        </div>
+                        <div class="box">
+                            <a href="/html/friends.html"><i class='bx bxs-group'></i></a>
+                            <a href="/html/friends.html"><p> الاصدقاء</p></a>
+                        </div>
+                        <div class="box">
+                            <a href="/html/profile.html"><i class='bx bxs-user-circle' ></i></a>
+                            <a href="/html/profile.html"><p> انا</p></a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    <script src="/js/tasks.js"></script>
+</body>
+
+</html>
