@@ -27,11 +27,11 @@ const matches = [
     year: "2025",
     time: "00:00:00",
     league: "Strawberry To Jackson",
-    img1: "/image_products/33.jpg",
+    img1: "33.jpg",
     team1: "Strawberry",
-    img2: "/image/profilee.jpg",
+    img2: "profilee.jpg",
     team2: "Jackson",
-    bg: "/image/aaa.jpg"
+    bg: "aaa.jpg"
   },
   {
     id: 2,
@@ -40,11 +40,11 @@ const matches = [
     year: "2025",
     time: "12:30:00",
     league: "Broccoli vs Carrot",
-    img1: "/image_products/31.jpg",
+    img1: "31.jpg",
     team1: "Broccoli",
-    img2: "/image/profilee.jpg",
+    img2: "profilee.jpg",
     team2: "Carrot",
-    bg: "/image/ccc.jpg"
+    bg: "ccc.jpg"
   },
   {
     id: 3,
@@ -53,11 +53,11 @@ const matches = [
     year: "2025",
     time: "12:30:00",
     league: "Broccoli vs Carrot",
-    img1: "/image_products/31.jpg",
+    img1: "31.jpg",
     team1: "Broccoli",
-    img2: "/image/profilee.jpg",
+    img2: "profilee.jpg",
     team2: "Carrot",
-    bg: "/image/ccc.jpg"
+    bg: "ccc.jpg"
   },
   {
     id: 4,
@@ -66,11 +66,11 @@ const matches = [
     year: "2025",
     time: "12:30:00",
     league: "Broccoli vs Carrot",
-    img1: "/image_products/31.jpg",
+    img1: "31.jpg",
     team1: "Broccoli",
-    img2: "/image/profilee.jpg",
+    img2: "profilee.jpg",
     team2: "Carrot",
-    bg: "/image/ccc.jpg"
+    bg: "ccc.jpg"
   },
   {
     id: 5,
@@ -79,11 +79,11 @@ const matches = [
     year: "2025",
     time: "12:30:00",
     league: "Broccoli vs Carrot",
-    img1: "/image_products/31.jpg",
+    img1: "31.jpg",
     team1: "Broccoli",
-    img2: "/image/profilee.jpg",
+    img2: "profilee.jpg",
     team2: "Carrot",
-    bg: "/image/ccc.jpg"
+    bg: "ccc.jpg"
   },
 ];
 
