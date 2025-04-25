@@ -17,7 +17,7 @@ window.onclick = function (event) {
 };
 
 // تغير صورة الوجهه
-const images = ["/image/cover.jpg", "/image/test1.jpg", "/image/test3.jpg"];
+const images = ["cover.jpg", "test1.jpg", "test3.jpg"];
 
 let currentIndex = 0;
 const imgElement = document.getElementById("slideshow");
