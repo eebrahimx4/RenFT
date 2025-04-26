@@ -207,6 +207,7 @@ body {
     height: 60px;
     padding-top: 10px;
     cursor: pointer;
+    overflow: hidden;
 }
 .SSS .box:hover{
     background-color: #ffffff55;
